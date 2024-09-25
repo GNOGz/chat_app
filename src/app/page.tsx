@@ -43,13 +43,9 @@ export default function Home() {
       </div>
       {/* Main Chat container */}
       {/* <div className="grid grid-cols-5 sm:flex md:flex"> */}
-        <div className="md:hidden sm:hidden">
-          <ChatList></ChatList>
-        </div>
+
         <ChatContent sender={user}></ChatContent>
-        <div className="sm:hidden md:hidden">
-          <ChatPerson sender={user} imgLink={imgLink}></ChatPerson>
-        </div>
+
       </div>
     // </div>
   );
