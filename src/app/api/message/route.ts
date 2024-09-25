@@ -1,5 +1,4 @@
 import { DB } from "../../libs/db";
-import { headers } from "next/headers";
 import { NextRequest, NextResponse } from "next/server";
 
 //get all message exist

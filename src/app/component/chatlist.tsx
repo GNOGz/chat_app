@@ -1,4 +1,3 @@
-import { CiHome, CiMonitor } from "react-icons/ci";
 
 export default function ChatList() {
   return (

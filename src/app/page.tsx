@@ -1,5 +1,5 @@
 "use client";
-import Navbar from "./component/navbar";
+// import Navbar from "./component/navbar";
 import ChatList from "./component/chatlist";
 import ChatContent from "./component/chatcontent";
 import ChatPerson from "./component/chatperson";

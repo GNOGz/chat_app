@@ -1,4 +1,5 @@
-export default function ChatPerson(prop:any) {
+import { chatPersonProp } from "../libs/types";
+export default function ChatPerson(prop:chatPersonProp) {
   return (
     <div className="flex flex-col h-screen bg-[#F8F8F8] ">
       <div className="flex flex-col p-5 gap-5 mx-auto my-2">

@@ -1,6 +1,5 @@
 "use client";
 import Chatbubble from "./chatbubble";
-import { bubbleContent } from "../libs/types";
 import { DB } from "../libs/db";
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -29,7 +28,7 @@ export default function ChatContent(prop:chatContentProp) {
         setTextInput("");
       })
       .catch((err) => {
-        alert("There are some error i guess T-T");
+        alert(err);
       });
   };
   const buttonMsg = () => {

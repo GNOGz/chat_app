@@ -1,7 +1,7 @@
 import { bubbleContent } from "../libs/types";
 
 export default function Chatbubble(prop:bubbleContent) {
-  let pos:string = prop.right?" text-right": " ";
+  const pos:string = prop.right?" text-right": " ";
   return (
     <div className={"py-8 " + pos}>
     <span className={ ("border rounded-md border-solid p-3 m-5 ") 

@@ -6,3 +6,6 @@ export type bubbleContent = {
 export type chatContentProp ={
     sender : string,
 }
+export type chatPersonProp = {
+    sender :string,
+}

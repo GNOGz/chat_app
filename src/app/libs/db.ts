@@ -1,4 +1,3 @@
-import { bubbleContent } from "./types";
 
 export const DB = {
   messages: [{
