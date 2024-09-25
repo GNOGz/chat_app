@@ -32,7 +32,7 @@ export default function Home() {
         <CiHome className="size-12"></CiHome>
         <CiMonitor className="size-12"></CiMonitor>
         <div className="text-blue-950 text-4xl">Chat App 101 : </div>
-        <span className="text-blue-950 text-4xl">Now you're {user}</span>
+        <span className="text-blue-950 text-4xl">Now you are {user}</span>
         <img src={imgLink} className="size-20 rounded-lg" alt="some cat pic" />
         <button
           onClick={toggleUser}
