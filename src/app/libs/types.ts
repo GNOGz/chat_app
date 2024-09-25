@@ -8,4 +8,5 @@ export type chatContentProp ={
 }
 export type chatPersonProp = {
     sender :string,
+    imgLink:string
 }

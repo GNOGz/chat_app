@@ -8,14 +8,19 @@ import { CiHome, CiMonitor } from "react-icons/ci";
 
 export default function Home() {
   const [user,setUser] = useState("user1");
+  const [imgLink,setImgLink] = useState("https://i.pinimg.com/736x/b9/c4/7e/b9c47ef70bff06613d397abfce02c6e7.jpg");
+
   const toggleUser = ()=>{
     if (user == "user1"){
       setUser("user2");
+      setImgLink("https://uploads.dailydot.com/2018/10/olli-the-polite-cat.jpg?auto=compress&fm=pjpg");
     }
     else{
       setUser("user1");
+      setImgLink("https://i.pinimg.com/736x/b9/c4/7e/b9c47ef70bff06613d397abfce02c6e7.jpg");
     }
   }
+
   return (
     <div>
       <div className="flex flex-row p-5 gap-8 max-h-28 bg-[#A1A6B4] ">
@@ -30,7 +35,7 @@ export default function Home() {
       <div className="grid grid-cols-5">
         <ChatList></ChatList>
         <ChatContent sender={user}></ChatContent>
-        <ChatPerson sender={user}></ChatPerson>
+        <ChatPerson sender={user} imgLink={imgLink}></ChatPerson>
       </div>
     </div>
   );

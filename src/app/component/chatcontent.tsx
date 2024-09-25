@@ -8,11 +8,9 @@ import { chatContentProp } from "../libs/types";
 export default function ChatContent(prop:chatContentProp) {
   const [chatlist, setChatlist] = useState(DB.messages);
   const [textInput, setTextInput] = useState("");
-
   useEffect(() => {
     getChatData();
   }, []);
-
   const getChatData = async () => {
     await axios.get("./api/message").then((res) => {
       console.log(res.data.message);
@@ -34,7 +32,7 @@ export default function ChatContent(prop:chatContentProp) {
   const buttonMsg = () => {
     enterMsg(textInput, prop.sender);
   };
-  const updateTextInput = (event:any) =>{
+  const updateTextInput = (event:React.ChangeEvent<HTMLInputElement>) =>{
     setTextInput(event.target.value);
   }
   return (
