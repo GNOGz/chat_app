@@ -1,8 +1,6 @@
 "use client";
 // import Navbar from "./component/navbar";
-import ChatList from "./component/chatlist";
 import ChatContent from "./component/chatcontent";
-import ChatPerson from "./component/chatperson";
 import { useState } from "react";
 import { CiHome, CiMonitor } from "react-icons/ci";
 
