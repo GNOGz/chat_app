@@ -27,7 +27,7 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <div className="bg-[#B4D2E7]">
       <div className="flex flex-row p-5 gap-8 max-h-28 bg-[#A1A6B4] ">
         <CiHome className="size-12"></CiHome>
         <CiMonitor className="size-12"></CiMonitor>
